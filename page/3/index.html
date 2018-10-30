@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Mechanical Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Mechanical Developer">
+<meta property="og:url" content="http://wnslwnsl2.github.io/page/3/index.html">
+<meta property="og:site_name" content="Mechanical Developer">
+<meta property="og:locale" content="KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mechanical Developer">
+
+
+
+
+
+<link rel="icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+
+
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                <img src="/images/logo.png" alt="" height="28">
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item " href="/archives">Archives</a>
+            
+            <a class="navbar-item " href="/categories">Categories</a>
+            
+            <a class="navbar-item " href="/categories/English">English</a>
+            
+            <a class="navbar-item " href="/categories/Programming">Programming</a>
+            
+            <a class="navbar-item " href="/categories/Mech">Mechanical Engineering</a>
+            
+            <a class="navbar-item " href="/categories/Tech">Tech</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/01/22/더듬이-로봇-feelers-robot/" itemprop="url">더듬이 로봇 (feelers robot)</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-01-22T00:35:05.000Z" itemprop="datePublished">Jan 22 2018</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes read (About 345 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h1 id="더듬이-로봇-동영상"><a href="#더듬이-로봇-동영상" class="headerlink" title="더듬이 로봇 동영상"></a><a href="https://www.youtube.com/watch?v=7H1S7SLf9fg" target="_blank" rel="noopener">더듬이 로봇 동영상</a></h1><h3 id="Development-period"><a href="#Development-period" class="headerlink" title="Development period"></a>Development period</h3><h6 id="2주"><a href="#2주" class="headerlink" title="2주"></a>2주</h6><h3 id="Using-device"><a href="#Using-device" class="headerlink" title="Using device"></a>Using device</h3><h6 id="얀센-리밋-스위치-더듬이-3d-프린팅"><a href="#얀센-리밋-스위치-더듬이-3d-프린팅" class="headerlink" title="얀센, 리밋 스위치, 더듬이(3d 프린팅)"></a>얀센, 리밋 스위치, 더듬이(3d 프린팅)</h6><h3 id="Schematic-diagram"><a href="#Schematic-diagram" class="headerlink" title="Schematic diagram"></a>Schematic diagram</h3><p><img src="/images/feelers robot/IMG_9282.JPG" width="700px" title="더듬이 부분"></p>
+<h4 id="About-the-project"><a href="#About-the-project" class="headerlink" title="About the project"></a>About the project</h4><p><img src="/images/feelers robot/feelers_robot_test.gif" width="700px" title="더듬이 로봇 gif"> </p>
+<p>오른쪽 더듬이 터치: 2초 후진 -&gt; 2초 왼쪽 제자리 회전<br>왼쪽 더듬이 터치 : 2초 후진 -&gt; 2초 오른쪽 제자리 회전</p>
+<h4 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h4><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#define Limit_L 2  // Pin 2 connected to Limit switch out</span></span><br><span class="line"><span class="hljs-comment">#define Limit_R 3  // Pin 3 connected to Limit switch out</span></span><br><span class="line"><span class="hljs-comment">#define button 4</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#define straight=255;</span></span><br><span class="line"><span class="hljs-comment">#define rotateH=255;</span></span><br><span class="line"><span class="hljs-comment">#define rotateL=180;</span></span><br><span class="line"></span><br><span class="line">int buttonState = 0;</span><br><span class="line">int Lim_L = 0;</span><br><span class="line">int Lim_R = 0;</span><br><span class="line">//모드</span><br><span class="line">char mode =<span class="hljs-string">'G'</span>;</span><br><span class="line"></span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">setup</span></span>() &#123;</span><br><span class="line">  pinMode(button, INPUT_PULLUP);  </span><br><span class="line">  pinMode(Limit_L,INPUT);</span><br><span class="line">  pinMode(Limit_R,INPUT);</span><br><span class="line">  pinMode(4, OUTPUT); // 방향 HIGH, LOW +,-</span><br><span class="line">  pinMode(5, OUTPUT); // PWM</span><br><span class="line">  pinMode(6, OUTPUT); // PWM</span><br><span class="line">  pinMode(7, OUTPUT); // 방향 HIGH, LOW +,-</span><br><span class="line">  Serial.begin(9600);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">loop</span></span>() &#123;</span><br><span class="line">  // put your main code here, to run repeatedly</span><br><span class="line">  buttonState = digitalRead(button);</span><br><span class="line">  Lim_L = digitalRead(Limit_L);// leftstate값 확인필요!, 흰색 = 750, 검은색 = 0</span><br><span class="line">  Lim_R = digitalRead(Limit_R);</span><br><span class="line"></span><br><span class="line">  mode_selector();</span><br><span class="line"></span><br><span class="line">  Serial.println(mode);</span><br><span class="line">  </span><br><span class="line">  switch(mode)&#123;</span><br><span class="line">    <span class="hljs-keyword">case</span> <span class="hljs-string">'G'</span>:  digitalWrite(4,0); //직진</span><br><span class="line">             analogWrite(5,255);</span><br><span class="line">             analogWrite(6,255);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">    <span class="hljs-keyword">case</span> <span class="hljs-string">'L'</span>:  digitalWrite(4,1);  // 후진</span><br><span class="line">             analogWrite(5,255);</span><br><span class="line">             analogWrite(6,255);</span><br><span class="line">             digitalWrite(7,1);</span><br><span class="line">             delay(2000);</span><br><span class="line">             digitalWrite(4,0);  // 좌회전</span><br><span class="line">             analogWrite(5,0);</span><br><span class="line">             analogWrite(6,255);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             delay(2000);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">    <span class="hljs-keyword">case</span> <span class="hljs-string">'R'</span>:digitalWrite(4,1);  // 후진</span><br><span class="line">             analogWrite(5,255);</span><br><span class="line">             analogWrite(6,255);</span><br><span class="line">             digitalWrite(7,1);</span><br><span class="line">             delay(2000);</span><br><span class="line">             digitalWrite(4,0);  // 우회전</span><br><span class="line">             analogWrite(5,255);</span><br><span class="line">             analogWrite(6,0);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             delay(2000);</span><br><span class="line">             <span class="hljs-built_in">break</span>;  </span><br><span class="line">    <span class="hljs-keyword">case</span> <span class="hljs-string">'B'</span>:  digitalWrite(4,1);  // 후진</span><br><span class="line">             analogWrite(5,255);</span><br><span class="line">             analogWrite(6,255);</span><br><span class="line">             digitalWrite(7,1);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  delay(10);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">mode_selector</span></span>()&#123;</span><br><span class="line"><span class="hljs-keyword">if</span>(Lim_L == 1 &amp;&amp; Lim_R == 1)&#123;mode =<span class="hljs-string">'G'</span>;&#125;</span><br><span class="line"><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(Lim_L == 0 &amp;&amp; Lim_R == 1)&#123;mode =<span class="hljs-string">'R'</span>;&#125;</span><br><span class="line"><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(Lim_L == 1 &amp;&amp; Lim_R == 0)&#123;mode =<span class="hljs-string">'L'</span>;&#125;</span><br><span class="line"><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(Lim_L == 0 &amp;&amp; Lim_R == 0)&#123;mode =<span class="hljs-string">'B'</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>delay(2000); 을 통해 하나의 case 안에서 두 가지 모션 수행</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">case</span> <span class="hljs-string">'L'</span>:  digitalWrite(4,1);  // 후진</span><br><span class="line">         analogWrite(5,255);</span><br><span class="line">         analogWrite(6,255);</span><br><span class="line">         digitalWrite(7,1);</span><br><span class="line">         delay(2000);</span><br><span class="line">         digitalWrite(4,0);  // 좌회전</span><br><span class="line">         analogWrite(5,0);</span><br><span class="line">         analogWrite(6,255);</span><br><span class="line">         digitalWrite(7,0);</span><br><span class="line">         delay(2000);</span><br><span class="line">         <span class="hljs-built_in">break</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>[1]<a href="http://kgu0724.tistory.com/18" target="_blank" rel="noopener">리밋 스위치</a><br>[2]<a href="http://www.eduscience.co.kr/goods/view?no=7471" target="_blank" rel="noopener">더듬이 로봇</a></p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/01/21/Control-Jansen-with-alexa/" itemprop="url">Control Jansen with alexa</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-01-21T11:15:54.000Z" itemprop="datePublished">Jan 21 2018</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            4 minutes read (About 559 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h2 id="알렉사-얀센-연동-동영상"><a href="#알렉사-얀센-연동-동영상" class="headerlink" title="알렉사 얀센 연동 동영상"></a><a href="https://www.youtube.com/watch?v=sgUG3iqVVBY" target="_blank" rel="noopener">알렉사 얀센 연동 동영상</a></h2><h2 id="Team-member"><a href="#Team-member" class="headerlink" title="Team member"></a>Team member</h2><h6 id="김영수-김현준"><a href="#김영수-김현준" class="headerlink" title="김영수, 김현준"></a>김영수, 김현준</h6><h3 id="Development-period"><a href="#Development-period" class="headerlink" title="Development period"></a>Development period</h3><h6 id="2017-4-5"><a href="#2017-4-5" class="headerlink" title="2017.4 - 5"></a>2017.4 - 5</h6><h3 id="Using-device"><a href="#Using-device" class="headerlink" title="Using device"></a>Using device</h3><h6 id="Alexa-echo-dot-jansen-L239D-motor-driver-esp8266"><a href="#Alexa-echo-dot-jansen-L239D-motor-driver-esp8266" class="headerlink" title="Alexa echo dot, jansen, L239D motor driver, esp8266"></a>Alexa echo dot, jansen, L239D motor driver, esp8266</h6><h3 id="Schematic-diagram"><a href="#Schematic-diagram" class="headerlink" title="Schematic diagram"></a>Schematic diagram</h3><p><img src="/images/alexa/overview.PNG" width="700px" title="Schematic Diagram"></p>
+<h4 id="About-the-project"><a href="#About-the-project" class="headerlink" title="About the project"></a>About the project</h4><ul>
+<li><a href="https://learn.adafruit.com/easy-alexa-or-echo-control-of-your-esp8266-huzzah/software-setup" target="_blank" rel="noopener">SW setup link</a></li>
+</ul>
+<p>aduino library 설치 아래 있는거 다 설치했더니 됬다</p>
+<p>ESPAsyncTCP-master.zip<br>ESPAsyncUDP-master.zip<br>ESPAsyncWebServer-master.zip<br>fauxmo-master.zip<br>xoseperez-fauxmoesp-fdf5ffd6793d.zip<br>Adafruit_CC3000_Library-master.zip<br>CDM v2.12.06 WHQL Certified.zip</p>
+<ul>
+<li>회로 구성<br><a href="http://gent.tistory.com/53" target="_blank" rel="noopener">L239D circuit 설명 링크</a></li>
+</ul>
+<p><img src="/images/alexa/circuit_alexa.PNG" width="700px" title="circuit"></p>
+<h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#include &lt;Arduino.h&gt;</span></span><br><span class="line"><span class="hljs-comment">#include &lt;ESP8266WiFi.h&gt;</span></span><br><span class="line"><span class="hljs-comment">#include "fauxmoESP.h"</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#define WIFI_SSID "KBDLAB1"</span></span><br><span class="line"><span class="hljs-comment">#define WIFI_PASS "kbdlabwifi2@"</span></span><br><span class="line"><span class="hljs-comment">#define SERIAL_BAUDRATE                 115200</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">fauxmoESP fauxmo;</span><br><span class="line"> </span><br><span class="line">// -----------------------------------------------------------------------------</span><br><span class="line">// Wifi</span><br><span class="line">// -----------------------------------------------------------------------------</span><br><span class="line"><span class="hljs-comment">#define Driver1 5   // D1</span></span><br><span class="line"><span class="hljs-comment">#define Driver2 4   // D2</span></span><br><span class="line"><span class="hljs-comment">#define Driver3 0   // D3</span></span><br><span class="line"><span class="hljs-comment">#define Driver4 2   // D4</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">wifiSetup</span></span>() &#123;</span><br><span class="line"> </span><br><span class="line">    // Set WIFI module to STA mode</span><br><span class="line">    WiFi.mode(WIFI_STA);</span><br><span class="line"> </span><br><span class="line">    // Connect</span><br><span class="line">    Serial.printf(<span class="hljs-string">"[WIFI] Connecting to %s "</span>, WIFI_SSID);</span><br><span class="line">    WiFi.begin(WIFI_SSID, WIFI_PASS);</span><br><span class="line"> </span><br><span class="line">    // Wait</span><br><span class="line">    <span class="hljs-keyword">while</span> (WiFi.status() != WL_CONNECTED) &#123;</span><br><span class="line">        Serial.print(<span class="hljs-string">"."</span>);</span><br><span class="line">        delay(100);</span><br><span class="line">    &#125;</span><br><span class="line">    Serial.println();</span><br><span class="line"> </span><br><span class="line">    // Connected!</span><br><span class="line">    Serial.printf(<span class="hljs-string">"[WIFI] STATION Mode, SSID: %s, IP address: %s\n"</span>, WiFi.SSID().c_str(), WiFi.localIP().toString().c_str());</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">void callback(uint8_t device_id, const char * device_name, bool state) &#123;</span><br><span class="line">  Serial.printf(<span class="hljs-string">"[MAIN] %s state: %s\n"</span>, device_name, state ? <span class="hljs-string">"ON"</span> : <span class="hljs-string">"OFF"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">if</span> ( (strcmp(device_name, <span class="hljs-string">"left"</span>) == 0) ) &#123;</span><br><span class="line">    // this just sets a variable that the main loop() does something about</span><br><span class="line">    <span class="hljs-keyword">if</span> (state) &#123;</span><br><span class="line">      digitalWrite(Driver3, HIGH);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">   <span class="hljs-keyword">if</span> ( (strcmp(device_name, <span class="hljs-string">"going"</span>) == 0) ) &#123;</span><br><span class="line">    // this just sets a variable that the main loop() does something about</span><br><span class="line">    <span class="hljs-keyword">if</span> (state) &#123;</span><br><span class="line">      digitalWrite(Driver1, HIGH);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, HIGH);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">   <span class="hljs-keyword">if</span> ( (strcmp(device_name, <span class="hljs-string">"backing"</span>) == 0) ) &#123;</span><br><span class="line">    // this just sets a variable that the main loop() does something about</span><br><span class="line">    <span class="hljs-keyword">if</span> (state) &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, HIGH);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, HIGH);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">   <span class="hljs-keyword">if</span> ( (strcmp(device_name, <span class="hljs-string">"spinning"</span>) == 0) ) &#123;</span><br><span class="line">    // this just sets a variable that the main loop() does something about</span><br><span class="line">    <span class="hljs-keyword">if</span> (state) &#123;</span><br><span class="line">      digitalWrite(Driver1, HIGH);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, HIGH);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">setup</span></span>() &#123;</span><br><span class="line">    // Init serial port and clean garbage</span><br><span class="line">    Serial.begin(SERIAL_BAUDRATE);</span><br><span class="line">    Serial.println(<span class="hljs-string">"FauxMo demo sketch"</span>);</span><br><span class="line">    Serial.println(<span class="hljs-string">"After connection, ask Alexa/Echo to 'turn &lt;devicename&gt; on' or 'off'"</span>);</span><br><span class="line">    pinMode(Driver1, OUTPUT);</span><br><span class="line">    pinMode(Driver2, OUTPUT);</span><br><span class="line">    pinMode(Driver3, OUTPUT);</span><br><span class="line">    pinMode(Driver4, OUTPUT);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    // Wifi</span><br><span class="line">    wifiSetup();</span><br><span class="line"> </span><br><span class="line">    // Fauxmo</span><br><span class="line">    fauxmo.addDevice(<span class="hljs-string">"going"</span>);</span><br><span class="line">    fauxmo.addDevice(<span class="hljs-string">"backing"</span>);</span><br><span class="line">    fauxmo.addDevice(<span class="hljs-string">"left"</span>);</span><br><span class="line"></span><br><span class="line">    fauxmo.addDevice(<span class="hljs-string">"spinning"</span>);</span><br><span class="line"></span><br><span class="line">    fauxmo.onMessage(callback);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">loop</span></span>() &#123;</span><br><span class="line">  fauxmo.handle();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>코드에서<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fauxmo.addDevice(<span class="hljs-string">"going"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>를 통해 알렉사 장치에 device를 추가해 주고,<br>callback 함수를 통해 해당 디바이스를 on/off 제어 한다.</p>
+<h4 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h4><p>영수~~</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>[1]<a href="https://learn.adafruit.com/easy-alexa-or-echo-control-of-your-esp8266-huzzah/software-setup" target="_blank" rel="noopener">알렉사 esp8266 SW setup adafruit 홈페이지</a><br>[2]<a href="http://pitangui.amazon.com/spa/index.html#appliances" target="_blank" rel="noopener">아마존 알렉사</a></p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/01/19/Line-Tracing-Jansen-Mechanism/" itemprop="url">Line Tracing Jansen Mechanism</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-01-19T07:25:36.000Z" itemprop="datePublished">Jan 19 2018</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            6 minutes read (About 830 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h1 id="라인-트레이싱-유튜브-영상"><a href="#라인-트레이싱-유튜브-영상" class="headerlink" title="라인 트레이싱 유튜브 영상"></a><a href="https://www.youtube.com/watch?v=QEO6HmtZd3Y" target="_blank" rel="noopener">라인 트레이싱 유튜브 영상</a></h1><h2 id="Team-Member"><a href="#Team-Member" class="headerlink" title="Team Member"></a>Team Member</h2><h6 id="수염난-피터팬-김현준-이수홍"><a href="#수염난-피터팬-김현준-이수홍" class="headerlink" title="[수염난 피터팬] 김현준 이수홍"></a>[수염난 피터팬] 김현준 이수홍</h6><h6 id="Special-thanks-김영수-차혜민-공현배-강남규-김승하"><a href="#Special-thanks-김영수-차혜민-공현배-강남규-김승하" class="headerlink" title="Special thanks 김영수, 차혜민, 공현배, 강남규, 김승하"></a>Special thanks 김영수, 차혜민, 공현배, 강남규, 김승하</h6><h3 id="Development-Period"><a href="#Development-Period" class="headerlink" title="Development Period"></a>Development Period</h3><h6 id="2017-2-3"><a href="#2017-2-3" class="headerlink" title="2017.2 ~ 3"></a>2017.2 ~ 3</h6><h3 id="Using-Device"><a href="#Using-Device" class="headerlink" title="Using Device"></a>Using Device</h3><h6 id="아두이노-적외선-센서-DC-모터-과학상자-기어-및-축-3D-프린터-신도-DP200"><a href="#아두이노-적외선-센서-DC-모터-과학상자-기어-및-축-3D-프린터-신도-DP200" class="headerlink" title="아두이노, 적외선 센서, DC 모터, 과학상자 기어 및 축, 3D 프린터(신도 DP200)"></a>아두이노, 적외선 센서, DC 모터, 과학상자 기어 및 축, 3D 프린터(신도 DP200)</h6><h3 id="Schematic-Diagram"><a href="#Schematic-Diagram" class="headerlink" title="Schematic Diagram"></a>Schematic Diagram</h3><p><img src="/images/Jansen/overall.PNG" width="600px" title="Schematic Diagram"></p>
+<h4 id="About-the-project-amp-Goal"><a href="#About-the-project-amp-Goal" class="headerlink" title="About the project &amp; Goal"></a>About the project &amp; Goal</h4><p> 여러개의 적외선 센서 조합을 이용하여 Jansen이 검은색 선을 따라갈 수 있도록 한다.</p>
+<h3 id="HW-design"><a href="#HW-design" class="headerlink" title="HW design"></a>HW design</h3><p><img src="/images/Jansen/leg length.PNG" width="600px" title="leg length"><br>다리 길이의 비율은, 참조[1]의 다리 길이 비율을 차용하였고, 30*30*30cm의 경진 대회 규격을 고려하여 최대한 길게 길이를 정했습니다.<br><img src="/images/Jansen/leg_design.PNG" width="600px" title="joint_design"></p>
+<ol>
+<li>보행중에 다리의 흔들림을 줄이기 위해서</li>
+<li>축의 흔들림으로 인한 내부 마찰을 줄이기 위해서</li>
+</ol>
+<p>위와 같은 목적으로 Joint에서의 디자인은 사용, 와셔와 볼트로 두 linkage 고정<br><img src="/images/Jansen/power transmission3.PNG" width="600px" title="power transmission"><br>동력 전달부에서, 기구의 강도가 가장 약해짐<br>이를 해결하기 위해, 알맞은 공차 설계로 동력 전달 중 흔들림으로 인한 파워 로스를 줄여줌<br><img src="/images/Jansen/body design.PNG" width="600px" title="body design"><br> 무게 중심을 낮추기 위해, 부품 중 가장 무거운 모터의 위치를 아래로 내릴 수 있도록 바디를 설계 하였다.</p>
+<h4 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h4><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">// 센서</span><br><span class="line">int left2 = A2;</span><br><span class="line">int left1 = A3;</span><br><span class="line">int right1 = A4;</span><br><span class="line">int right2 = A5;</span><br><span class="line"></span><br><span class="line">int l2 = 0;</span><br><span class="line">int l1 = 0;</span><br><span class="line">int r1 = 0;</span><br><span class="line">int r2 = 0;</span><br><span class="line">//모드</span><br><span class="line">int mode=0;</span><br><span class="line">int r = 1;</span><br><span class="line"></span><br><span class="line">int straight=255;</span><br><span class="line">int rotateH=255;</span><br><span class="line">int rotateL=180;</span><br><span class="line"></span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">setup</span></span>() &#123;</span><br><span class="line">  pinMode(left2,INPUT);</span><br><span class="line">  pinMode(left1,INPUT);</span><br><span class="line">  pinMode(right1,INPUT);</span><br><span class="line">  pinMode(right2,INPUT);</span><br><span class="line">  pinMode(4, OUTPUT); // 방향 HIGH, LOW +,-</span><br><span class="line">  pinMode(5, OUTPUT); // PWM</span><br><span class="line">  pinMode(6, OUTPUT); // PWM</span><br><span class="line">  pinMode(7, OUTPUT); // 방향 HIGH, LOW +,-</span><br><span class="line">  Serial.begin(9600);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">loop</span></span>() &#123;</span><br><span class="line">  // put your main code here, to run repeatedly</span><br><span class="line">  l2 = analogRead(left2);// leftstate값 확인필요!, 흰색 = 750, 검은색 = 0</span><br><span class="line">  l1 = analogRead(left1); //rightstate 확인필요!, 흰색 = 750, 검은색 = 0</span><br><span class="line">  r1 = analogRead(right1);</span><br><span class="line">  r2 = analogRead(right2);</span><br><span class="line"> </span><br><span class="line">  Serial.print(l2);</span><br><span class="line">  Serial.print(<span class="hljs-string">"/"</span>);</span><br><span class="line">  Serial.print(l1);</span><br><span class="line">  Serial.print(<span class="hljs-string">"/"</span>);</span><br><span class="line">  Serial.print(r1);</span><br><span class="line">  Serial.print(<span class="hljs-string">"/"</span>);</span><br><span class="line">  Serial.print(r2);</span><br><span class="line">  Serial.print(<span class="hljs-string">"/"</span>);</span><br><span class="line">  Serial.println(mode); </span><br><span class="line"></span><br><span class="line">  r = r + 1;</span><br><span class="line">  <span class="hljs-keyword">if</span>(r&gt;10)&#123; r = 1; &#125;</span><br><span class="line">  mode_selector();</span><br><span class="line">  </span><br><span class="line">  switch(mode)&#123;</span><br><span class="line">    <span class="hljs-keyword">case</span> 0:  digitalWrite(4,0);</span><br><span class="line">             analogWrite(5,straight);</span><br><span class="line">             analogWrite(6,straight);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">    <span class="hljs-keyword">case</span> -1:  digitalWrite(4,0);  // 좌회전</span><br><span class="line">             analogWrite(5,rotateL);</span><br><span class="line">             analogWrite(6,rotateH);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">    <span class="hljs-keyword">case</span> -2:  digitalWrite(4,0);  // 좌강회전</span><br><span class="line">             analogWrite(5,0);</span><br><span class="line">             analogWrite(6,rotateH);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;  </span><br><span class="line">    <span class="hljs-keyword">case</span> 1:  digitalWrite(4,0);  // 우회전</span><br><span class="line">             analogWrite(5,rotateH);</span><br><span class="line">             analogWrite(6,rotateL);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">    <span class="hljs-keyword">case</span> 2:  digitalWrite(4,0);  // 우강회전</span><br><span class="line">             analogWrite(5,rotateH);</span><br><span class="line">             analogWrite(6,0);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">             </span><br><span class="line">    <span class="hljs-keyword">case</span> 5:  digitalWrite(4,0);  // 정지</span><br><span class="line">             analogWrite(5,0);</span><br><span class="line">             analogWrite(6,0);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;    </span><br><span class="line">   <span class="hljs-keyword">case</span> -5:  digitalWrite(4,1);  // 후진</span><br><span class="line">            analogWrite(5,180);</span><br><span class="line">            analogWrite(6,180);</span><br><span class="line">            digitalWrite(7,1);</span><br><span class="line">            <span class="hljs-built_in">break</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  delay(10);</span><br><span class="line">&#125;</span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">mode_selector</span></span>()&#123;</span><br><span class="line">  <span class="hljs-keyword">if</span>(l2&gt;200 &amp;&amp; r2&gt;200)&#123;</span><br><span class="line">    mode=0;                              //0**0 직진</span><br><span class="line">    <span class="hljs-keyword">if</span>(l1&gt;200 &amp;&amp; r1&gt;200)&#123;</span><br><span class="line">    mode=-5;                             //0000 후진</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span>(l1&lt;200 &amp;&amp; r1 &gt;200)&#123;mode=-1;&#125;      //0100 좌</span><br><span class="line"> </span><br><span class="line">    <span class="hljs-keyword">if</span>(r1&lt;200 &amp;&amp; l1 &gt;200)&#123;mode=1;&#125;       //0010 우</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">if</span>(l2&lt;200)&#123;mode=-2;&#125;                   //1000 좌강</span><br><span class="line">  <span class="hljs-keyword">if</span>(r2&lt;200)&#123;mode=2;&#125;                    //0001 우강</span><br><span class="line"> </span><br><span class="line">  <span class="hljs-keyword">if</span>(l2&lt;200 &amp;&amp; r2&lt;200)&#123;pow(-1,r);&#125;       //좌우 흔들어 줘서, 계속 앞 뒤로 움직이며 정체 된 것을 해결해 줌</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Awarded"><a href="#Awarded" class="headerlink" title="Awarded"></a>Awarded</h4><p><img src="/images/Jansen/awarded.PNG" width="600px" title="Schematic Diagram"></p>
+<h4 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h4><p>경진 대회 참가 할 수 있는 기회를 주신 이수홍 교수님<br>기본 적인 얀센 구조를 알려주고, 연구실 팀의 작품 완성을 위해 헌신해준 영수<br>마지막날 까지 같이 작업하며, 센서 배치 구조, 알고리즘 등 많은 도움을 준 혜민,현배<br>그리고 경진대회로 고생 많이 한 남규 승하 형 감사합니다.</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>[1] JIN YONGZHU, 지형근. (2016). 얀센 메커니즘을 이용한 보행 로봇의 최적설계에 관한 연구. 한국CDE학회지, 22(2), 18-22. 2. 트레이싱 알고리즘<br>[2] <a href="https://www.edison.re.kr/web/design/msketch?p_auth=rYxldno0&amp;p_p_id=msketch_WAR_msketchportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_msketch_WAR_msketchportlet_javax.portlet.action=requestLogin" target="_blank" rel="noopener">m.sketch 프로그램 - 2D mechanism modeling</a><br>[3] <a href="https://www.edison.re.kr/" target="_blank" rel="noopener">에디슨 홈페이지</a></p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/01/19/keyword/" itemprop="url">Key words [2018-01-19 16:02:08]</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-01-19T07:02:08.000Z" itemprop="datePublished">Jan 19 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/정리/">정리</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes read (About 363 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h3 id="맨몸-운동"><a href="#맨몸-운동" class="headerlink" title="맨몸 운동"></a>맨몸 운동</h3><ul>
+<li><a href="http://www.coupang.com/np/search?component=&amp;q=%EB%94%A5%EB%B0%94&amp;channel=user" target="_blank" rel="noopener">이퀼라이저 딥바</a></li>
+</ul>
+<hr>
+<p>어떻게든 되겠지<br>근데 가서 진짜 열심히 할꺼야<br>신나고 재밌고 즐겁게</p>
+<hr>
+<p><a href="https://brunch.co.kr/" target="_blank" rel="noopener">브런치</a><br><a href="https://brunch.co.kr/@modagitbee/3" target="_blank" rel="noopener">스타트업 이력서에 대한 충고</a><br>1.이력서 쓸 때, “스타트업에서 주도적으로 일하며 내가 만든 서비스가 직접 유저들에게 사용되는 걸 보고 싶다.”<br>이건 스타트업에서 얻을 수 있는 장접이지, 지원하는 회사에 대한 이야기가 아니다.<br>지원자를 ‘스타트업에 가고 싶은 사람’으로 볼 뿐 ‘우리 회사에 오고 싶어 하는 사람’으로 보진 않습니다.</p>
+<ol start="2">
+<li><p>자신이 만든 ‘서비스’보단 ‘기술’에 더 집중하세요</p>
+</li>
+<li><p>함께 성장한다.</p>
+</li>
+<li><p>회사와 함께 성장한다.</p>
+</li>
+</ol>
+<p>취업을 위해 무언가를 하나 더 배운다기 보단 스스로를 잘 분석하고 자신이 이미 가지고 있는 것들을 점검해 보면<br>자신이 어떤 장점을 가지고 있는지 알게 됩니다.<br>이런 장점들을 이력서에 적어놓고, 다듬고 적어놓고 다듬고 하다 보면, 문장/ 포트폴리오 하나하나에 들어간 나의 고민은 절대 퇴색하지 않습니다.</p>
+<hr>
+<p>오픽<br>!@#1</p>
+<p>뉴스킨 아이디<br>3617452</p>
+<table>
+<thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content 1</td>
+<td>Content 3</td>
+</tr>
+<tr>
+<td>Content 2</td>
+<td>Content 4</td>
+</tr>
+</tbody>
+</table>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/01/19/site/" itemprop="url">Sites storage [2018-01-19 16:01:08]</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-01-19T07:01:08.000Z" itemprop="datePublished">Jan 19 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/정리/">정리</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes read (About 242 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h3 id="Mark-down"><a href="#Mark-down" class="headerlink" title="Mark down"></a>Mark down</h3><ul>
+<li><a href="https://g6ling.github.io/2016/11/21/write-report-with-markdown/" target="_blank" rel="noopener">markdown으로 레포트 쓰기</a></li>
+<li><a href="https://innks.github.io/2017/05/21/hexo/Markdown-w/" target="_blank" rel="noopener">마크다운 문법 설명 및 hexo 문법테스트</a></li>
+<li><a href="http://morethanair.com/archives/404" target="_blank" rel="noopener">Typora 사용법</a></li>
+</ul>
+<hr>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><ul>
+<li><a href="https://www.holaxprogramming.com/2017/05/15/github-page-and-custom-domain/" target="_blank" rel="noopener">Hexo Start Guaid</a><br>hexo –deploy 적용 부분에서,<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>Git 서버 배포 플러그인 해줘야함</p>
+<ul>
+<li><p><a href="https://colorscripter.com/" target="_blank" rel="noopener">Color scripter</a></p>
+</li>
+<li><p>[$ npm install hexo-generator-category –save] 이거 깔면 node_modules로 들어옴</p>
+</li>
+</ul>
+<hr>
+<h3 id="윈도우"><a href="#윈도우" class="headerlink" title="윈도우"></a>윈도우</h3><ul>
+<li><p><a href="http://hoonycaramba.tistory.com/5" target="_blank" rel="noopener">윈도우10 탐색기 응답없음</a></p>
+</li>
+<li><p><a href="http://gall.dcinside.com/board/view/?id=hit&amp;no=14408" target="_blank" rel="noopener">공유기로 컴퓨터 만들기</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="구직-사이트"><a href="#구직-사이트" class="headerlink" title="구직 사이트"></a>구직 사이트</h3><ul>
+<li><p><a href="https://www.wanted.co.kr/introduction" target="_blank" rel="noopener">원티드</a></p>
+</li>
+<li><p><a href="https://www.rocketpunch.com/" target="_blank" rel="noopener">로켓 펀치</a></p>
+</li>
+<li><p><a href="http://www.demoday.co.kr/" target="_blank" rel="noopener">데모 데이</a></p>
+</li>
+<li><p><a href="https://www.jobplanet.co.kr/welcome/index" target="_blank" rel="noopener">잡 플래닛</a></p>
+</li>
+<li><p><a href="https://www.topresume.com/" target="_blank" rel="noopener">유료 이력서 검토 사이트</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="HTML-CSS"><a href="#HTML-CSS" class="headerlink" title="HTML CSS"></a>HTML CSS</h3><ul>
+<li><a href="http://it-ing.tistory.com/53" target="_blank" rel="noopener">블로그 글 접기 펴기</a></li>
+</ul>
+<h3 id="openCV-python"><a href="#openCV-python" class="headerlink" title="openCV-python"></a><a href="http://blog.naver.com/PostView.nhn?blogId=samsjang&amp;logNo=220498694383&amp;categoryNo=66&amp;parentCategoryNo=0&amp;viewDate=&amp;currentPage=6&amp;postListTopCurrentPage=&amp;from=postList&amp;userTopListOpen=true&amp;userTopListCount=10&amp;userTopListManageOpen=false&amp;userTopListCurrentPage=6" target="_blank" rel="noopener">openCV-python</a></h3>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
+        
+<nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
+    <div class="pagination-previous">
+        <a href="/page/2/">Prev</a>
+    </div>
+    <div class="pagination-next">
+        <a href="/page/4/">Next</a>
+    </div>
+    <ul class="pagination-list is-hidden-mobile">
+        
+        <li><a class="pagination-link" href="/">1</a></li>
+        
+        <li><a class="pagination-link" href="/page/2/">2</a></li>
+        
+        <li><a class="pagination-link is-current" href="/page/3/">3</a></li>
+        
+        <li><a class="pagination-link" href="/page/4/">4</a></li>
+        
+    </ul>
+</nav>
+    
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2018 wnslwnsl2&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("kr");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>

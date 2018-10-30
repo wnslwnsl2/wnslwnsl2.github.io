@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Category: Programming - Mechanical Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Mechanical Developer">
+<meta property="og:url" content="http://wnslwnsl2.github.io/categories/Programming/index.html">
+<meta property="og:site_name" content="Mechanical Developer">
+<meta property="og:locale" content="KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mechanical Developer">
+
+
+
+
+
+<link rel="icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+
+
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                <img src="/images/logo.png" alt="" height="28">
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item " href="/archives">Archives</a>
+            
+            <a class="navbar-item " href="/categories">Categories</a>
+            
+            <a class="navbar-item " href="/categories/English">English</a>
+            
+            <a class="navbar-item is-active" href="/categories/Programming">Programming</a>
+            
+            <a class="navbar-item " href="/categories/Mech">Mechanical Engineering</a>
+            
+            <a class="navbar-item " href="/categories/Tech">Tech</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section section-heading">
+    <div class="container">
+        <div class="content">
+            <h5><i class="far fa-folder"></i>Programming</h5>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/10/30/cpp-Copy-Constructor/" itemprop="url">(c++) Copy Constructor</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-10-30T09:51:29.000Z" itemprop="datePublished">Oct 30 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Programming/">Programming</a><span>></span><a class="article-category-link" href="/categories/Programming/C/">C++</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes read (About 307 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h1 id="Copy-Constructor-amp-Swallow-Deep-Copy"><a href="#Copy-Constructor-amp-Swallow-Deep-Copy" class="headerlink" title="Copy Constructor &amp; Swallow/Deep Copy"></a>Copy Constructor &amp; Swallow/Deep Copy</h1><h3 id="def"><a href="#def" class="headerlink" title="def"></a>def</h3><p> The copy constructor is called whenever an object is <code>initialized</code> (by direct-initialization or copy-initialization) from another object of the same type.</p>
+<h3 id="when-object-initialized"><a href="#when-object-initialized" class="headerlink" title="when object initialized?"></a>when object initialized?</h3><ol>
+<li><p>initialization</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class T</span><br><span class="line">T a=b;</span><br><span class="line">T a(b);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>function argument passing</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">void func(T t);</span><br><span class="line">f(a)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>function argument return</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">T func()</span><br><span class="line">return a</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="Implicitly-declared-copy-constructor-Swallow-Copy"><a href="#Implicitly-declared-copy-constructor-Swallow-Copy" class="headerlink" title="Implicitly-declared copy constructor(Swallow Copy)"></a>Implicitly-declared copy constructor(Swallow Copy)</h3><p>If no user-defined copy constructors are provided for a class type (struct, class, or union), the compiler will always declare a copy constructor as a non-explicit inline public member of its class. This implicitly-declared copy constructor has the form </p>
+<h3 id="Example-1-Error-code"><a href="#Example-1-Error-code" class="headerlink" title="Example 1) Error code"></a>Example 1) Error code</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">class String</span><br><span class="line">&#123;</span><br><span class="line">private:</span><br><span class="line">	char* m_Buffer;</span><br><span class="line">	unsigned int m_Size;</span><br><span class="line">public:</span><br><span class="line">	String(const char* string)</span><br><span class="line">	&#123;</span><br><span class="line">		m_Size = strlen(string);</span><br><span class="line">		m_Buffer = new char[m_Size+1];</span><br><span class="line">		memcpy(m_Buffer, string, m_Size);</span><br><span class="line">		m_Buffer[m_Size] = NULL;</span><br><span class="line">	&#125;</span><br><span class="line">	~String()</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;소멸자&quot; &lt;&lt; endl;</span><br><span class="line">		delete[] m_Buffer;</span><br><span class="line">	&#125;</span><br><span class="line">	char* GetBuffer() const</span><br><span class="line">	&#123;</span><br><span class="line">		return m_Buffer;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">std::ostream&amp; operator&lt;&lt;(std::ostream&amp; stream, const String string) &#123;</span><br><span class="line">	stream &lt;&lt; string.GetBuffer();</span><br><span class="line">	return stream;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	String string = &quot;Cherno&quot;;</span><br><span class="line">	cout &lt;&lt; string &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="solution-1"><a href="#solution-1" class="headerlink" title="solution 1)"></a>solution 1)</h4><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::ostream&amp; operator&lt;&lt;(std::ostream&amp; stream, const String string)</span><br></pre></td></tr></table></figure>
+<p>const String string (매우 안좋은 코드)</p>
+<ol>
+<li>입력값으로 객체를 복사</li>
+<li>복사된 객체가 없어지면서 소멸함수에 의해 m_Buffer가 삭제된다.</li>
+</ol>
+<p>const String<code>&amp;</code> string<br>객체를 참조함으로서 불필요한 객체의 생성을 막는다.</p>
+<h3 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2)"></a>Example 2)</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String string = &quot;Cherno&quot;;</span><br><span class="line">String second = string;</span><br><span class="line"></span><br><span class="line">cout &lt;&lt; string &lt;&lt; endl;</span><br><span class="line">cout &lt;&lt; string &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+<h4 id="solution-2"><a href="#solution-2" class="headerlink" title="solution 2)"></a>solution 2)</h4><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ol>
+<li>이것이 C++ 이다, 최호성</li>
+<li><a href="https://en.cppreference.com/w/cpp/language/copy_constructor" target="_blank" rel="noopener">cppreference - copy constructors</a></li>
+<li><a href="https://www.youtube.com/watch?v=BvR1Pgzzr38" target="_blank" rel="noopener">TheChernoProject</a></li>
+</ol>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/10/30/Overloading/" itemprop="url">Overloading</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-10-30T07:53:50.000Z" itemprop="datePublished">Oct 30 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Programming/">Programming</a><span>></span><a class="article-category-link" href="/categories/Programming/C/">C++</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a few seconds read (About 9 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>첫 코드</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int _tmain&#123;ar</span><br></pre></td></tr></table></figure>
+<p>ㅁㄴㅇ</p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2018 wnslwnsl2&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("kr");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>

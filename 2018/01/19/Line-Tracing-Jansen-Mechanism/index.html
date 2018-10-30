@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Line Tracing Jansen Mechanism - Mechanical Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+    <meta name="description" content="라인 트레이싱 유튜브 영상Team Member[수염난 피터팬] 김현준 이수홍Special thanks 김영수, 차혜민, 공현배, 강남규, 김승하Development Period2017.2 ~ 3Using Device아두이노, 적외선 센서, DC 모터, 과학상자 기어 및 축, 3D 프린터(신도 DP200)Schematic Diagram About the pr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Line Tracing Jansen Mechanism">
+<meta property="og:url" content="http://wnslwnsl2.github.io/2018/01/19/Line-Tracing-Jansen-Mechanism/index.html">
+<meta property="og:site_name" content="Mechanical Developer">
+<meta property="og:description" content="라인 트레이싱 유튜브 영상Team Member[수염난 피터팬] 김현준 이수홍Special thanks 김영수, 차혜민, 공현배, 강남규, 김승하Development Period2017.2 ~ 3Using Device아두이노, 적외선 센서, DC 모터, 과학상자 기어 및 축, 3D 프린터(신도 DP200)Schematic Diagram About the pr">
+<meta property="og:locale" content="KR">
+<meta property="og:image" content="http://wnslwnsl2.github.io/images/Jansen/overall.PNG">
+<meta property="og:image" content="http://wnslwnsl2.github.io/images/Jansen/leg%20length.PNG">
+<meta property="og:image" content="http://wnslwnsl2.github.io/images/Jansen/leg_design.PNG">
+<meta property="og:image" content="http://wnslwnsl2.github.io/images/Jansen/power%20transmission3.PNG">
+<meta property="og:image" content="http://wnslwnsl2.github.io/images/Jansen/body%20design.PNG">
+<meta property="og:image" content="http://wnslwnsl2.github.io/images/Jansen/awarded.PNG">
+<meta property="og:updated_time" content="2018-01-21T07:21:37.703Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Line Tracing Jansen Mechanism">
+<meta name="twitter:description" content="라인 트레이싱 유튜브 영상Team Member[수염난 피터팬] 김현준 이수홍Special thanks 김영수, 차혜민, 공현배, 강남규, 김승하Development Period2017.2 ~ 3Using Device아두이노, 적외선 센서, DC 모터, 과학상자 기어 및 축, 3D 프린터(신도 DP200)Schematic Diagram About the pr">
+<meta name="twitter:image" content="http://wnslwnsl2.github.io/images/Jansen/overall.PNG">
+
+
+
+
+
+<link rel="icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+
+
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                <img src="/images/logo.png" alt="" height="28">
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item " href="/archives">Archives</a>
+            
+            <a class="navbar-item " href="/categories">Categories</a>
+            
+            <a class="navbar-item " href="/categories/English">English</a>
+            
+            <a class="navbar-item " href="/categories/Programming">Programming</a>
+            
+            <a class="navbar-item " href="/categories/Mech">Mechanical Engineering</a>
+            
+            <a class="navbar-item " href="/categories/Tech">Tech</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Line Tracing Jansen Mechanism
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-01-19T07:25:36.000Z" itemprop="datePublished">Jan 19 2018</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            6 minutes read (About 830 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h1 id="라인-트레이싱-유튜브-영상"><a href="#라인-트레이싱-유튜브-영상" class="headerlink" title="라인 트레이싱 유튜브 영상"></a><a href="https://www.youtube.com/watch?v=QEO6HmtZd3Y" target="_blank" rel="noopener">라인 트레이싱 유튜브 영상</a></h1><h2 id="Team-Member"><a href="#Team-Member" class="headerlink" title="Team Member"></a>Team Member</h2><h6 id="수염난-피터팬-김현준-이수홍"><a href="#수염난-피터팬-김현준-이수홍" class="headerlink" title="[수염난 피터팬] 김현준 이수홍"></a>[수염난 피터팬] 김현준 이수홍</h6><h6 id="Special-thanks-김영수-차혜민-공현배-강남규-김승하"><a href="#Special-thanks-김영수-차혜민-공현배-강남규-김승하" class="headerlink" title="Special thanks 김영수, 차혜민, 공현배, 강남규, 김승하"></a>Special thanks 김영수, 차혜민, 공현배, 강남규, 김승하</h6><h3 id="Development-Period"><a href="#Development-Period" class="headerlink" title="Development Period"></a>Development Period</h3><h6 id="2017-2-3"><a href="#2017-2-3" class="headerlink" title="2017.2 ~ 3"></a>2017.2 ~ 3</h6><h3 id="Using-Device"><a href="#Using-Device" class="headerlink" title="Using Device"></a>Using Device</h3><h6 id="아두이노-적외선-센서-DC-모터-과학상자-기어-및-축-3D-프린터-신도-DP200"><a href="#아두이노-적외선-센서-DC-모터-과학상자-기어-및-축-3D-프린터-신도-DP200" class="headerlink" title="아두이노, 적외선 센서, DC 모터, 과학상자 기어 및 축, 3D 프린터(신도 DP200)"></a>아두이노, 적외선 센서, DC 모터, 과학상자 기어 및 축, 3D 프린터(신도 DP200)</h6><h3 id="Schematic-Diagram"><a href="#Schematic-Diagram" class="headerlink" title="Schematic Diagram"></a>Schematic Diagram</h3><p><img src="/images/Jansen/overall.PNG" width="600px" title="Schematic Diagram"></p>
+<h4 id="About-the-project-amp-Goal"><a href="#About-the-project-amp-Goal" class="headerlink" title="About the project &amp; Goal"></a>About the project &amp; Goal</h4><p> 여러개의 적외선 센서 조합을 이용하여 Jansen이 검은색 선을 따라갈 수 있도록 한다.</p>
+<h3 id="HW-design"><a href="#HW-design" class="headerlink" title="HW design"></a>HW design</h3><p><img src="/images/Jansen/leg length.PNG" width="600px" title="leg length"><br>다리 길이의 비율은, 참조[1]의 다리 길이 비율을 차용하였고, 30*30*30cm의 경진 대회 규격을 고려하여 최대한 길게 길이를 정했습니다.<br><img src="/images/Jansen/leg_design.PNG" width="600px" title="joint_design"></p>
+<ol>
+<li>보행중에 다리의 흔들림을 줄이기 위해서</li>
+<li>축의 흔들림으로 인한 내부 마찰을 줄이기 위해서</li>
+</ol>
+<p>위와 같은 목적으로 Joint에서의 디자인은 사용, 와셔와 볼트로 두 linkage 고정<br><img src="/images/Jansen/power transmission3.PNG" width="600px" title="power transmission"><br>동력 전달부에서, 기구의 강도가 가장 약해짐<br>이를 해결하기 위해, 알맞은 공차 설계로 동력 전달 중 흔들림으로 인한 파워 로스를 줄여줌<br><img src="/images/Jansen/body design.PNG" width="600px" title="body design"><br> 무게 중심을 낮추기 위해, 부품 중 가장 무거운 모터의 위치를 아래로 내릴 수 있도록 바디를 설계 하였다.</p>
+<h4 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h4><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">// 센서</span><br><span class="line">int left2 = A2;</span><br><span class="line">int left1 = A3;</span><br><span class="line">int right1 = A4;</span><br><span class="line">int right2 = A5;</span><br><span class="line"></span><br><span class="line">int l2 = 0;</span><br><span class="line">int l1 = 0;</span><br><span class="line">int r1 = 0;</span><br><span class="line">int r2 = 0;</span><br><span class="line">//모드</span><br><span class="line">int mode=0;</span><br><span class="line">int r = 1;</span><br><span class="line"></span><br><span class="line">int straight=255;</span><br><span class="line">int rotateH=255;</span><br><span class="line">int rotateL=180;</span><br><span class="line"></span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">setup</span></span>() &#123;</span><br><span class="line">  pinMode(left2,INPUT);</span><br><span class="line">  pinMode(left1,INPUT);</span><br><span class="line">  pinMode(right1,INPUT);</span><br><span class="line">  pinMode(right2,INPUT);</span><br><span class="line">  pinMode(4, OUTPUT); // 방향 HIGH, LOW +,-</span><br><span class="line">  pinMode(5, OUTPUT); // PWM</span><br><span class="line">  pinMode(6, OUTPUT); // PWM</span><br><span class="line">  pinMode(7, OUTPUT); // 방향 HIGH, LOW +,-</span><br><span class="line">  Serial.begin(9600);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">loop</span></span>() &#123;</span><br><span class="line">  // put your main code here, to run repeatedly</span><br><span class="line">  l2 = analogRead(left2);// leftstate값 확인필요!, 흰색 = 750, 검은색 = 0</span><br><span class="line">  l1 = analogRead(left1); //rightstate 확인필요!, 흰색 = 750, 검은색 = 0</span><br><span class="line">  r1 = analogRead(right1);</span><br><span class="line">  r2 = analogRead(right2);</span><br><span class="line"> </span><br><span class="line">  Serial.print(l2);</span><br><span class="line">  Serial.print(<span class="hljs-string">"/"</span>);</span><br><span class="line">  Serial.print(l1);</span><br><span class="line">  Serial.print(<span class="hljs-string">"/"</span>);</span><br><span class="line">  Serial.print(r1);</span><br><span class="line">  Serial.print(<span class="hljs-string">"/"</span>);</span><br><span class="line">  Serial.print(r2);</span><br><span class="line">  Serial.print(<span class="hljs-string">"/"</span>);</span><br><span class="line">  Serial.println(mode); </span><br><span class="line"></span><br><span class="line">  r = r + 1;</span><br><span class="line">  <span class="hljs-keyword">if</span>(r&gt;10)&#123; r = 1; &#125;</span><br><span class="line">  mode_selector();</span><br><span class="line">  </span><br><span class="line">  switch(mode)&#123;</span><br><span class="line">    <span class="hljs-keyword">case</span> 0:  digitalWrite(4,0);</span><br><span class="line">             analogWrite(5,straight);</span><br><span class="line">             analogWrite(6,straight);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">    <span class="hljs-keyword">case</span> -1:  digitalWrite(4,0);  // 좌회전</span><br><span class="line">             analogWrite(5,rotateL);</span><br><span class="line">             analogWrite(6,rotateH);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">    <span class="hljs-keyword">case</span> -2:  digitalWrite(4,0);  // 좌강회전</span><br><span class="line">             analogWrite(5,0);</span><br><span class="line">             analogWrite(6,rotateH);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;  </span><br><span class="line">    <span class="hljs-keyword">case</span> 1:  digitalWrite(4,0);  // 우회전</span><br><span class="line">             analogWrite(5,rotateH);</span><br><span class="line">             analogWrite(6,rotateL);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">    <span class="hljs-keyword">case</span> 2:  digitalWrite(4,0);  // 우강회전</span><br><span class="line">             analogWrite(5,rotateH);</span><br><span class="line">             analogWrite(6,0);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;</span><br><span class="line">             </span><br><span class="line">    <span class="hljs-keyword">case</span> 5:  digitalWrite(4,0);  // 정지</span><br><span class="line">             analogWrite(5,0);</span><br><span class="line">             analogWrite(6,0);</span><br><span class="line">             digitalWrite(7,0);</span><br><span class="line">             <span class="hljs-built_in">break</span>;    </span><br><span class="line">   <span class="hljs-keyword">case</span> -5:  digitalWrite(4,1);  // 후진</span><br><span class="line">            analogWrite(5,180);</span><br><span class="line">            analogWrite(6,180);</span><br><span class="line">            digitalWrite(7,1);</span><br><span class="line">            <span class="hljs-built_in">break</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  delay(10);</span><br><span class="line">&#125;</span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">mode_selector</span></span>()&#123;</span><br><span class="line">  <span class="hljs-keyword">if</span>(l2&gt;200 &amp;&amp; r2&gt;200)&#123;</span><br><span class="line">    mode=0;                              //0**0 직진</span><br><span class="line">    <span class="hljs-keyword">if</span>(l1&gt;200 &amp;&amp; r1&gt;200)&#123;</span><br><span class="line">    mode=-5;                             //0000 후진</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span>(l1&lt;200 &amp;&amp; r1 &gt;200)&#123;mode=-1;&#125;      //0100 좌</span><br><span class="line"> </span><br><span class="line">    <span class="hljs-keyword">if</span>(r1&lt;200 &amp;&amp; l1 &gt;200)&#123;mode=1;&#125;       //0010 우</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">if</span>(l2&lt;200)&#123;mode=-2;&#125;                   //1000 좌강</span><br><span class="line">  <span class="hljs-keyword">if</span>(r2&lt;200)&#123;mode=2;&#125;                    //0001 우강</span><br><span class="line"> </span><br><span class="line">  <span class="hljs-keyword">if</span>(l2&lt;200 &amp;&amp; r2&lt;200)&#123;pow(-1,r);&#125;       //좌우 흔들어 줘서, 계속 앞 뒤로 움직이며 정체 된 것을 해결해 줌</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Awarded"><a href="#Awarded" class="headerlink" title="Awarded"></a>Awarded</h4><p><img src="/images/Jansen/awarded.PNG" width="600px" title="Schematic Diagram"></p>
+<h4 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h4><p>경진 대회 참가 할 수 있는 기회를 주신 이수홍 교수님<br>기본 적인 얀센 구조를 알려주고, 연구실 팀의 작품 완성을 위해 헌신해준 영수<br>마지막날 까지 같이 작업하며, 센서 배치 구조, 알고리즘 등 많은 도움을 준 혜민,현배<br>그리고 경진대회로 고생 많이 한 남규 승하 형 감사합니다.</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>[1] JIN YONGZHU, 지형근. (2016). 얀센 메커니즘을 이용한 보행 로봇의 최적설계에 관한 연구. 한국CDE학회지, 22(2), 18-22. 2. 트레이싱 알고리즘<br>[2] <a href="https://www.edison.re.kr/web/design/msketch?p_auth=rYxldno0&amp;p_p_id=msketch_WAR_msketchportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_msketch_WAR_msketchportlet_javax.portlet.action=requestLogin" target="_blank" rel="noopener">m.sketch 프로그램 - 2D mechanism modeling</a><br>[3] <a href="https://www.edison.re.kr/" target="_blank" rel="noopener">에디슨 홈페이지</a></p>
+
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2018/01/21/Control-Jansen-with-alexa/">Control Jansen with alexa</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2018/01/19/keyword/">Key words [2018-01-19 16:02:08]</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="disqus_thread">
+    
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2018 wnslwnsl2&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("kr");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>

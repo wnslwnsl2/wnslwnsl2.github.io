@@ -1,111 +1,480 @@
 <!DOCTYPE html>
-<html>
-
+<html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.8.0">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="theme-color" content="#33474d">
-	<title>Hexo</title>
-	<link rel="stylesheet" href="/css/style.css">
-	
-      <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <meta charset="utf-8">
+<title>Mechanical Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Mechanical Developer">
+<meta property="og:url" content="http://wnslwnsl2.github.io/index.html">
+<meta property="og:site_name" content="Mechanical Developer">
+<meta property="og:locale" content="KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mechanical Developer">
+
+
+
+
+
+<link rel="icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
     
+    
+    
+    
+    
+    
+
+    
+
+
 </head>
-
 <body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                <img src="/images/logo.png" alt="" height="28">
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item " href="/archives">Archives</a>
+            
+            <a class="navbar-item " href="/categories">Categories</a>
+            
+            <a class="navbar-item " href="/categories/English">English</a>
+            
+            <a class="navbar-item " href="/categories/Programming">Programming</a>
+            
+            <a class="navbar-item " href="/categories/Mech">Mechanical Engineering</a>
+            
+            <a class="navbar-item " href="/categories/Tech">Tech</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
 
-	<header class="header">
-		<nav class="header__nav">
-			
-				<a href="/archives" class="header__link">Archive</a>
-			
-				<a href="/tags" class="header__link">Tags</a>
-			
-				<a href="/atom.xml" class="header__link">RSS</a>
-			
-		</nav>
-		<h1 class="header__title"><a href="/">Hexo</a></h1>
-		<h2 class="header__subtitle"></h2>
-	</header>
+    <section class="section">
+    <div class="container">
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/10/30/cpp-Copy-Constructor/" itemprop="url">(c++) Copy Constructor</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-10-30T09:51:29.000Z" itemprop="datePublished">Oct 30 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Programming/">Programming</a><span>></span><a class="article-category-link" href="/categories/Programming/C/">C++</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes read (About 307 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h1 id="Copy-Constructor-amp-Swallow-Deep-Copy"><a href="#Copy-Constructor-amp-Swallow-Deep-Copy" class="headerlink" title="Copy Constructor &amp; Swallow/Deep Copy"></a>Copy Constructor &amp; Swallow/Deep Copy</h1><h3 id="def"><a href="#def" class="headerlink" title="def"></a>def</h3><p> The copy constructor is called whenever an object is <code>initialized</code> (by direct-initialization or copy-initialization) from another object of the same type.</p>
+<h3 id="when-object-initialized"><a href="#when-object-initialized" class="headerlink" title="when object initialized?"></a>when object initialized?</h3><ol>
+<li><p>initialization</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class T</span><br><span class="line">T a=b;</span><br><span class="line">T a(b);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>function argument passing</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">void func(T t);</span><br><span class="line">f(a)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>function argument return</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">T func()</span><br><span class="line">return a</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="Implicitly-declared-copy-constructor-Swallow-Copy"><a href="#Implicitly-declared-copy-constructor-Swallow-Copy" class="headerlink" title="Implicitly-declared copy constructor(Swallow Copy)"></a>Implicitly-declared copy constructor(Swallow Copy)</h3><p>If no user-defined copy constructors are provided for a class type (struct, class, or union), the compiler will always declare a copy constructor as a non-explicit inline public member of its class. This implicitly-declared copy constructor has the form </p>
+<h3 id="Example-1-Error-code"><a href="#Example-1-Error-code" class="headerlink" title="Example 1) Error code"></a>Example 1) Error code</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">class String</span><br><span class="line">&#123;</span><br><span class="line">private:</span><br><span class="line">	char* m_Buffer;</span><br><span class="line">	unsigned int m_Size;</span><br><span class="line">public:</span><br><span class="line">	String(const char* string)</span><br><span class="line">	&#123;</span><br><span class="line">		m_Size = strlen(string);</span><br><span class="line">		m_Buffer = new char[m_Size+1];</span><br><span class="line">		memcpy(m_Buffer, string, m_Size);</span><br><span class="line">		m_Buffer[m_Size] = NULL;</span><br><span class="line">	&#125;</span><br><span class="line">	~String()</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;소멸자&quot; &lt;&lt; endl;</span><br><span class="line">		delete[] m_Buffer;</span><br><span class="line">	&#125;</span><br><span class="line">	char* GetBuffer() const</span><br><span class="line">	&#123;</span><br><span class="line">		return m_Buffer;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">std::ostream&amp; operator&lt;&lt;(std::ostream&amp; stream, const String string) &#123;</span><br><span class="line">	stream &lt;&lt; string.GetBuffer();</span><br><span class="line">	return stream;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	String string = &quot;Cherno&quot;;</span><br><span class="line">	cout &lt;&lt; string &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="solution-1"><a href="#solution-1" class="headerlink" title="solution 1)"></a>solution 1)</h4><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::ostream&amp; operator&lt;&lt;(std::ostream&amp; stream, const String string)</span><br></pre></td></tr></table></figure>
+<p>const String string (매우 안좋은 코드)</p>
+<ol>
+<li>입력값으로 객체를 복사</li>
+<li>복사된 객체가 없어지면서 소멸함수에 의해 m_Buffer가 삭제된다.</li>
+</ol>
+<p>const String<code>&amp;</code> string<br>객체를 참조함으로서 불필요한 객체의 생성을 막는다.</p>
+<h3 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2)"></a>Example 2)</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String string = &quot;Cherno&quot;;</span><br><span class="line">String second = string;</span><br><span class="line"></span><br><span class="line">cout &lt;&lt; string &lt;&lt; endl;</span><br><span class="line">cout &lt;&lt; string &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+<h4 id="solution-2"><a href="#solution-2" class="headerlink" title="solution 2)"></a>solution 2)</h4><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ol>
+<li>이것이 C++ 이다, 최호성</li>
+<li><a href="https://en.cppreference.com/w/cpp/language/copy_constructor" target="_blank" rel="noopener">cppreference - copy constructors</a></li>
+<li><a href="https://www.youtube.com/watch?v=BvR1Pgzzr38" target="_blank" rel="noopener">TheChernoProject</a></li>
+</ol>
 
-	<main>
-		
-
-
-
-	<article>
-	
-		<h1><a href="/2018/10/30/hello-world/">Hello World</a></h1>
-	
-	<div class="article__infos">
-		<span class="article__date">2018-10-30</span><br>
-		
-		
-	</div>
-
-	
-
-	
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-	
-
-	
-
+    
+    </div>
+    
+    
 </article>
 
 
 
 
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/10/30/Material-Engineering/" itemprop="url">Material Engineering</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-10-30T08:19:25.000Z" itemprop="datePublished">Oct 30 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/mech/">mech</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a few seconds read (About 22 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h1 id="Ready-for-Mechanical-Engineer"><a href="#Ready-for-Mechanical-Engineer" class="headerlink" title="Ready for Mechanical Engineer"></a>Ready for Mechanical Engineer</h1><h3 id="keywords-amp-books"><a href="#keywords-amp-books" class="headerlink" title="keywords&amp;books"></a>keywords&amp;books</h3><p>1.mechanics of meterials<br>2.Control Systems Engineering<br>3.Machine Design<br>4.Dynamics<br>5.Mechanical Vibrations</p>
+<h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><p>1.auto CAD<br>2.Solid edge</p>
+
+    
+    </div>
+    
+    
+</article>
 
 
-	<span class="different-posts">📕 end of posts 📕</span>
 
 
-	</main>
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/10/30/Tech/" itemprop="url">Tech</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-10-30T08:18:42.000Z" itemprop="datePublished">Oct 30 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Tech/">Tech</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a few seconds read (About 0 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        
+    
+    </div>
+    
+    
+</article>
 
-	<footer class="footer">
-	<div class="footer-content">
-		
-	      <div class="footer__element">
-	<p>Hi there, <br>welcome to my Blog glad you found it. Have a look around, will you?</p>
-</div>
-
-	    
-	      <div class="footer__element">
-	<h5>Check out</h5>
-	<ul class="footer-links">
-		<li class="footer-links__link"><a href="/archives">Archive</a></li>
-		
-		  <li class="footer-links__link"><a href="/atom.xml">RSS</a></li>
-	    
-		<li class="footer-links__link"><a href="/about">about page</a></li>
-		<li class="footer-links__link"><a href="/tags">Tags</a></li>
-		<li class="footer-links__link"><a href="/categories">Categories</a></li>
-	</ul>
-</div>
-
-	    
-
-		<div class="footer-credit">
-			<span>© 2018 wnslwnsl2 | Powered by <a href="https://hexo.io/">Hexo</a> | Theme <a href="https://github.com/HoverBaum/meilidu-hexo">MeiliDu</a></span>
-		</div>
-
-	</div>
 
 
+
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/10/30/Overloading/" itemprop="url">Overloading</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-10-30T07:53:50.000Z" itemprop="datePublished">Oct 30 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Programming/">Programming</a><span>></span><a class="article-category-link" href="/categories/Programming/C/">C++</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a few seconds read (About 9 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>첫 코드</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int _tmain&#123;ar</span><br></pre></td></tr></table></figure>
+<p>ㅁㄴㅇ</p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2018/10/30/Silicon-Velly-s01e01-day1/" itemprop="url">Silicon Velly s01e01 -day1</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-10-30T06:21:36.000Z" itemprop="datePublished">Oct 30 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/English/">English</a><span>></span><a class="article-category-link" href="/categories/English/Silicon-Velly/">Silicon Velly</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            5 minutes read (About 788 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>Studied at 2018.10.18</p>
+<p>00:16.7    Whoo. Yeah.<br>00:18.8    Somebody make some  | motherfucking noise in here!<br>00:25.2    Fuck these people.<br>00:31.0    Man, this place is unbelievable.<br>00:33.6    Fucking Goolybib, man.<br>00:35.2    Those guys build a  | mediocre piece of software,<br>00:37.0    that might be worth something someday,<br>00:38.9    and now they live here.<br>00:40.7    There’s money flying  | all over Silicon Valley<br>00:42.5    but none of it ever seems to hit us.<br>00:45.0    What the hell are you eating?<br>00:46.7    Liquid shrimp. It’s 200 dollars a quart.<br>00:49.2    Wylie Dufresne made it.<br>00:51.0    How does it taste?<br>00:53.4    Like how I would imagine cum tastes.<br>00:55.9    You guys taking it all in?<br>00:58.7    Because this is what it looks like when<br>01:00.8    Google acquires your company  | for over 200 million dollars.<br>01:04.4    Look Dustin Moskovitz.<br>01:06.9    Elon Musk. Eric Schmidt.<br>01:09.1    Whatever the fuck the guy’s  | name is who created Photrio.<br>01:11.7    I mean, Kid Rock is the  | poorest person here.<br>01:15.2    Apart from you guys.<br>01:16.6    Ok, there’s 40 billion dollars<br>01:19.0    of net worth, walking around this party.<br>01:21.2    And you guys are standing  | around drinking shrimp<br>01:23.3    and talking about what cum tastes like.<br>01:25.3    Yeah, I heard that. You  | guys live in my Incubator<br>01:28.8    you’ve got to network. That’s  | why I brought you here.<br>01:31.6    I got us in here.<br>01:33.3    Javeed over there is my ex-room-mate.<br>01:35.7    Yeah, but I drove.<br>01:38.4    Eric Schmidt, Erlich Bachman.<br>01:42.8    It’s amazing how the men  | and women at these things<br>01:44.9    always separate like this.<br>01:46.6    Yeah, every party in Silicon Valley  | ends up like a hasidic wedding.<br>01:50.4    Not even the Goolybib guys  | were talking to girls.<br>01:53.0    They don’t have to, Big Head.<br>01:54.8    This house talks to girls.<br>01:59.7    Hello! Whoo!<br>02:02.8    I got seven words for you.<br>02:05.9    I love Goolybib’s integrated-multi-platform-functionality!<br>02:12.9    Yeah! Whoo!<br>02:17.1    But seriously,<br>02:19.3    you know, a few days ago, when we were sitting down with Barak Obama,<br>02:23.0    I <code>turned to</code> these guys and said,<br><code>turn to : to ask a person or organizaition for help or support</code><br><code>ex)he felt he has no one to turn to.</code><br>02:24.3    ok, you know, we’re making a lot of money.<br>02:27.4    And yes, we’re disrupting digital media.<br>02:30.7    But most importantly<br>02:33.6    we’re making the world a better place.<br>02:36.3    Through constructing elegant<br>02:37.7    hierarchies for maximum code reuse and extensibility.<br>02:42.4    So everyone.<br>02:45.2    Here’s too many more nights just like this one.<br>02:49.2    Take it away, my good friend, Kid Rock.<br>02:53.8    What a dick. </p>
+<p>03:07.8    Big Head, there is a personal ad section on this asperger site.<br>03:12.0    Holy shit, this one is looking for<br>03:13.8    a relationship that has the potential to become<br>03:15.7    sexual in nature.”<br>03:17.3    holly, she is on the spectrum.<br>03:19.1    She can’t even make eye contact with the camera.<br>03:21.6    Richard, can I talk to you for a second?<br>03:23.3    - Solo. | - Mm-hmm.<br>03:27.8    We need to talk about Pied Piper.<br>03:31.4    What about it? The website’s up and running,<br>03:34.0    I’m just redesigning the compression. It just needs users.<br>03:36.5    Yeah, no shit.<br>03:38.5    But even if somebody wanted to use it<br>03:40.2    they wouldn’t be able to figure out how to. It’s incomprehensible.<br>03:43.0    Now, Richard, when you pitched me Pied Piper you said</p>
+<p>03:45.4    it was  | gonna be, “the Google of music.”<br>03:47.7    Which is a really rad way to pitch something.<br>03:49.6    I mean, I liked it. I thought it had “applications”.<br>03:52.0    No, it has all that.  | Look, when it blows up,<br>03:54.5    and it will once it reaches a critical mass of users,<br>03:56.9    Pied Piper will be able to search the whole world<br>03:59.1    of recorded music to find out if there’s a match to see if<br>04:01.6    you’re infringing on any copyrighted material.<br>04:03.6    So, if you’re a song writer or a band…<br>04:05.2    Ok, first of all, nobody gives a shit<br>04:06.6    about stealing other people’s music, ok?<br>04:08.9    Everybody involved in the music industry<br>04:10.8    is either stealing it or sharing it.<br>04:12.2    They’re all a bunch of assholes, especially Radiohead.<br>04:14.2    - Look, Richard…  | - No.<br>04:15.6    Yeah, they’re assholes.<br>04:18.0    Now, look, Richard, if you want to live here,<br>04:20.2    you’ve got to deliver. </p>
+<p>04:21.4    I can’t have dead weight at my Incubator, ok?<br>04:25.4    Either that, or show some promise for fuck’s sake.<br>04:27.8    Like NipAlert, Big Head’s app.<br>04:30.7    It gives you the location of a woman with erect nipples.<br>04:33.4    Now, that’s something people want.<br>04:35.1    Richard, you need to get in touch with humanity.<br>04:37.3    When I sold my company, Aviato,<br>04:39.5    I wanted to give back. That’s why I started this place,<br>04:42.3    to do something big. To make a difference.<br>04:45.0    You know, like Steve.<br>04:46.9    Uh, Jobs or Wozniak?<br>04:51.9    Steve Jobs or Steve…<br>04:53.0    Oh, I heard you.<br>04:55.3    - Which one?  | - Jobs.<br>04:57.8    I mean, Jobs was a poser.  | He didn’t even write code.<br>05:03.0    You just disappeared up your own asshole.<br>05:06.0    - You know that? You did.  | - Well, technically…<br>05:08.8    Big Head, I’m gonna be meditating.<br>05:10.4    He knew how to package the ideas, but it was Wozniak that… </p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
+        
+<nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
+    <div class="pagination-previous is-invisible is-hidden-mobile">
+        <a href="/page/0/">Prev</a>
+    </div>
+    <div class="pagination-next">
+        <a href="/page/2/">Next</a>
+    </div>
+    <ul class="pagination-list is-hidden-mobile">
+        
+        <li><a class="pagination-link is-current" href="/">1</a></li>
+        
+        <li><a class="pagination-link" href="/page/2/">2</a></li>
+        
+        <li><a class="pagination-link" href="/page/3/">3</a></li>
+        
+        <li><a class="pagination-link" href="/page/4/">4</a></li>
+        
+    </ul>
+</nav>
+    
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2018 wnslwnsl2&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
 </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("kr");
+</script>
 
 
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
 
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
 </body>
-
 </html>

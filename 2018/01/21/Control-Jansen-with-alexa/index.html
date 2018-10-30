@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Control Jansen with alexa - Mechanical Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+    <meta name="description" content="알렉사 얀센 연동 동영상Team member김영수, 김현준Development period2017.4 - 5Using deviceAlexa echo dot, jansen, L239D motor driver, esp8266Schematic diagram About the project SW setup link  aduino library 설치 아래 있는거 다">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Control Jansen with alexa">
+<meta property="og:url" content="http://wnslwnsl2.github.io/2018/01/21/Control-Jansen-with-alexa/index.html">
+<meta property="og:site_name" content="Mechanical Developer">
+<meta property="og:description" content="알렉사 얀센 연동 동영상Team member김영수, 김현준Development period2017.4 - 5Using deviceAlexa echo dot, jansen, L239D motor driver, esp8266Schematic diagram About the project SW setup link  aduino library 설치 아래 있는거 다">
+<meta property="og:locale" content="KR">
+<meta property="og:image" content="http://wnslwnsl2.github.io/images/alexa/overview.PNG">
+<meta property="og:image" content="http://wnslwnsl2.github.io/images/alexa/circuit_alexa.PNG">
+<meta property="og:updated_time" content="2018-01-22T00:33:16.833Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Control Jansen with alexa">
+<meta name="twitter:description" content="알렉사 얀센 연동 동영상Team member김영수, 김현준Development period2017.4 - 5Using deviceAlexa echo dot, jansen, L239D motor driver, esp8266Schematic diagram About the project SW setup link  aduino library 설치 아래 있는거 다">
+<meta name="twitter:image" content="http://wnslwnsl2.github.io/images/alexa/overview.PNG">
+
+
+
+
+
+<link rel="icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+
+
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                <img src="/images/logo.png" alt="" height="28">
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item " href="/archives">Archives</a>
+            
+            <a class="navbar-item " href="/categories">Categories</a>
+            
+            <a class="navbar-item " href="/categories/English">English</a>
+            
+            <a class="navbar-item " href="/categories/Programming">Programming</a>
+            
+            <a class="navbar-item " href="/categories/Mech">Mechanical Engineering</a>
+            
+            <a class="navbar-item " href="/categories/Tech">Tech</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Control Jansen with alexa
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-01-21T11:15:54.000Z" itemprop="datePublished">Jan 21 2018</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            4 minutes read (About 559 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h2 id="알렉사-얀센-연동-동영상"><a href="#알렉사-얀센-연동-동영상" class="headerlink" title="알렉사 얀센 연동 동영상"></a><a href="https://www.youtube.com/watch?v=sgUG3iqVVBY" target="_blank" rel="noopener">알렉사 얀센 연동 동영상</a></h2><h2 id="Team-member"><a href="#Team-member" class="headerlink" title="Team member"></a>Team member</h2><h6 id="김영수-김현준"><a href="#김영수-김현준" class="headerlink" title="김영수, 김현준"></a>김영수, 김현준</h6><h3 id="Development-period"><a href="#Development-period" class="headerlink" title="Development period"></a>Development period</h3><h6 id="2017-4-5"><a href="#2017-4-5" class="headerlink" title="2017.4 - 5"></a>2017.4 - 5</h6><h3 id="Using-device"><a href="#Using-device" class="headerlink" title="Using device"></a>Using device</h3><h6 id="Alexa-echo-dot-jansen-L239D-motor-driver-esp8266"><a href="#Alexa-echo-dot-jansen-L239D-motor-driver-esp8266" class="headerlink" title="Alexa echo dot, jansen, L239D motor driver, esp8266"></a>Alexa echo dot, jansen, L239D motor driver, esp8266</h6><h3 id="Schematic-diagram"><a href="#Schematic-diagram" class="headerlink" title="Schematic diagram"></a>Schematic diagram</h3><p><img src="/images/alexa/overview.PNG" width="700px" title="Schematic Diagram"></p>
+<h4 id="About-the-project"><a href="#About-the-project" class="headerlink" title="About the project"></a>About the project</h4><ul>
+<li><a href="https://learn.adafruit.com/easy-alexa-or-echo-control-of-your-esp8266-huzzah/software-setup" target="_blank" rel="noopener">SW setup link</a></li>
+</ul>
+<p>aduino library 설치 아래 있는거 다 설치했더니 됬다</p>
+<p>ESPAsyncTCP-master.zip<br>ESPAsyncUDP-master.zip<br>ESPAsyncWebServer-master.zip<br>fauxmo-master.zip<br>xoseperez-fauxmoesp-fdf5ffd6793d.zip<br>Adafruit_CC3000_Library-master.zip<br>CDM v2.12.06 WHQL Certified.zip</p>
+<ul>
+<li>회로 구성<br><a href="http://gent.tistory.com/53" target="_blank" rel="noopener">L239D circuit 설명 링크</a></li>
+</ul>
+<p><img src="/images/alexa/circuit_alexa.PNG" width="700px" title="circuit"></p>
+<h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#include &lt;Arduino.h&gt;</span></span><br><span class="line"><span class="hljs-comment">#include &lt;ESP8266WiFi.h&gt;</span></span><br><span class="line"><span class="hljs-comment">#include "fauxmoESP.h"</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#define WIFI_SSID "KBDLAB1"</span></span><br><span class="line"><span class="hljs-comment">#define WIFI_PASS "kbdlabwifi2@"</span></span><br><span class="line"><span class="hljs-comment">#define SERIAL_BAUDRATE                 115200</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">fauxmoESP fauxmo;</span><br><span class="line"> </span><br><span class="line">// -----------------------------------------------------------------------------</span><br><span class="line">// Wifi</span><br><span class="line">// -----------------------------------------------------------------------------</span><br><span class="line"><span class="hljs-comment">#define Driver1 5   // D1</span></span><br><span class="line"><span class="hljs-comment">#define Driver2 4   // D2</span></span><br><span class="line"><span class="hljs-comment">#define Driver3 0   // D3</span></span><br><span class="line"><span class="hljs-comment">#define Driver4 2   // D4</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">wifiSetup</span></span>() &#123;</span><br><span class="line"> </span><br><span class="line">    // Set WIFI module to STA mode</span><br><span class="line">    WiFi.mode(WIFI_STA);</span><br><span class="line"> </span><br><span class="line">    // Connect</span><br><span class="line">    Serial.printf(<span class="hljs-string">"[WIFI] Connecting to %s "</span>, WIFI_SSID);</span><br><span class="line">    WiFi.begin(WIFI_SSID, WIFI_PASS);</span><br><span class="line"> </span><br><span class="line">    // Wait</span><br><span class="line">    <span class="hljs-keyword">while</span> (WiFi.status() != WL_CONNECTED) &#123;</span><br><span class="line">        Serial.print(<span class="hljs-string">"."</span>);</span><br><span class="line">        delay(100);</span><br><span class="line">    &#125;</span><br><span class="line">    Serial.println();</span><br><span class="line"> </span><br><span class="line">    // Connected!</span><br><span class="line">    Serial.printf(<span class="hljs-string">"[WIFI] STATION Mode, SSID: %s, IP address: %s\n"</span>, WiFi.SSID().c_str(), WiFi.localIP().toString().c_str());</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">void callback(uint8_t device_id, const char * device_name, bool state) &#123;</span><br><span class="line">  Serial.printf(<span class="hljs-string">"[MAIN] %s state: %s\n"</span>, device_name, state ? <span class="hljs-string">"ON"</span> : <span class="hljs-string">"OFF"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">if</span> ( (strcmp(device_name, <span class="hljs-string">"left"</span>) == 0) ) &#123;</span><br><span class="line">    // this just sets a variable that the main loop() does something about</span><br><span class="line">    <span class="hljs-keyword">if</span> (state) &#123;</span><br><span class="line">      digitalWrite(Driver3, HIGH);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">   <span class="hljs-keyword">if</span> ( (strcmp(device_name, <span class="hljs-string">"going"</span>) == 0) ) &#123;</span><br><span class="line">    // this just sets a variable that the main loop() does something about</span><br><span class="line">    <span class="hljs-keyword">if</span> (state) &#123;</span><br><span class="line">      digitalWrite(Driver1, HIGH);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, HIGH);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">   <span class="hljs-keyword">if</span> ( (strcmp(device_name, <span class="hljs-string">"backing"</span>) == 0) ) &#123;</span><br><span class="line">    // this just sets a variable that the main loop() does something about</span><br><span class="line">    <span class="hljs-keyword">if</span> (state) &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, HIGH);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, HIGH);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">   <span class="hljs-keyword">if</span> ( (strcmp(device_name, <span class="hljs-string">"spinning"</span>) == 0) ) &#123;</span><br><span class="line">    // this just sets a variable that the main loop() does something about</span><br><span class="line">    <span class="hljs-keyword">if</span> (state) &#123;</span><br><span class="line">      digitalWrite(Driver1, HIGH);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, HIGH);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      digitalWrite(Driver1, LOW);</span><br><span class="line">      digitalWrite(Driver2, LOW);</span><br><span class="line">      digitalWrite(Driver3, LOW);</span><br><span class="line">      digitalWrite(Driver4, LOW);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">setup</span></span>() &#123;</span><br><span class="line">    // Init serial port and clean garbage</span><br><span class="line">    Serial.begin(SERIAL_BAUDRATE);</span><br><span class="line">    Serial.println(<span class="hljs-string">"FauxMo demo sketch"</span>);</span><br><span class="line">    Serial.println(<span class="hljs-string">"After connection, ask Alexa/Echo to 'turn &lt;devicename&gt; on' or 'off'"</span>);</span><br><span class="line">    pinMode(Driver1, OUTPUT);</span><br><span class="line">    pinMode(Driver2, OUTPUT);</span><br><span class="line">    pinMode(Driver3, OUTPUT);</span><br><span class="line">    pinMode(Driver4, OUTPUT);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    // Wifi</span><br><span class="line">    wifiSetup();</span><br><span class="line"> </span><br><span class="line">    // Fauxmo</span><br><span class="line">    fauxmo.addDevice(<span class="hljs-string">"going"</span>);</span><br><span class="line">    fauxmo.addDevice(<span class="hljs-string">"backing"</span>);</span><br><span class="line">    fauxmo.addDevice(<span class="hljs-string">"left"</span>);</span><br><span class="line"></span><br><span class="line">    fauxmo.addDevice(<span class="hljs-string">"spinning"</span>);</span><br><span class="line"></span><br><span class="line">    fauxmo.onMessage(callback);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">void <span class="hljs-function"><span class="hljs-title">loop</span></span>() &#123;</span><br><span class="line">  fauxmo.handle();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>코드에서<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fauxmo.addDevice(<span class="hljs-string">"going"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>를 통해 알렉사 장치에 device를 추가해 주고,<br>callback 함수를 통해 해당 디바이스를 on/off 제어 한다.</p>
+<h4 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h4><p>영수~~</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>[1]<a href="https://learn.adafruit.com/easy-alexa-or-echo-control-of-your-esp8266-huzzah/software-setup" target="_blank" rel="noopener">알렉사 esp8266 SW setup adafruit 홈페이지</a><br>[2]<a href="http://pitangui.amazon.com/spa/index.html#appliances" target="_blank" rel="noopener">아마존 알렉사</a></p>
+
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2018/01/22/더듬이-로봇-feelers-robot/">더듬이 로봇 (feelers robot)</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2018/01/19/Line-Tracing-Jansen-Mechanism/">Line Tracing Jansen Mechanism</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="disqus_thread">
+    
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2018 wnslwnsl2&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("kr");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>
